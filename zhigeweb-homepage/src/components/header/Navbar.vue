@@ -1,22 +1,23 @@
 <script setup>
 import NavbarItem from './NavbarItem.vue';
 </script>
+
 <template>
-    <div class="head_wrapper">
-        <div class="head-item left-bar">
-            <img alt="织个网" class="logo" src="../../assets/logo.svg" />
+        <div class="head_wrapper">
+            <div class="head-item left-bar">
+                <img alt="织个网" class="logo" src="../../assets/icons/logo.svg" />
+            </div>
+            <div class="head-item middle-bar">
+                <NavbarItem class="item" text="首页" />
+                <NavbarItem class="item" text="共建" />
+                <NavbarItem class="item" text="帮助" />
+            </div>
+            <div class="head-item right-bar">
+                <NavbarItem class="item" text="登录" />
+                <span style="vertical-align: text-bottom; user-select: none;">/</span>
+                <NavbarItem class="item" text="注册" />
+            </div>
         </div>
-        <div class="head-item middle-bar">
-            <NavbarItem class="item" text="首页" />
-            <NavbarItem class="item" text="共建" />
-            <NavbarItem class="item" text="帮助" />
-        </div>
-        <div class="head-item right-bar">
-            <NavbarItem class="item" text="登录" />
-            /
-            <NavbarItem class="item" text="注册" />
-        </div>
-    </div>
 </template>
 
 <style scoped>
@@ -42,10 +43,10 @@ import NavbarItem from './NavbarItem.vue';
 }
 
 .middle-bar .item {
-    margin: 0 10px;
+    margin: 0 14px;
 }
 
 .right-bar .item {
-    margin: 0 3px;
+    margin: 0 8px;
 }
 </style>

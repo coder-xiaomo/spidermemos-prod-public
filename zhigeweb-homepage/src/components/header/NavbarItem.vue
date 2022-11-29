@@ -17,5 +17,8 @@ defineProps({
 .navbar-item {
     display: inline-block;
     cursor: pointer;
+    font-size: 16px;
+
+    user-select: none;
 }
 </style>

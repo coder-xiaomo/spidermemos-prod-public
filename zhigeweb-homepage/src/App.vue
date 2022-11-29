@@ -1,5 +1,5 @@
 <script setup>
-import TheWelcome from './components/TheWelcome.vue'
+import TheWelcome from './views/home/Home.vue'
 import Navbar from './components/header/Navbar.vue';
 </script>
 
@@ -14,15 +14,19 @@ import Navbar from './components/header/Navbar.vue';
 
 <style scoped>
 header {
-    height: 48px;
+    position: fixed;
+    z-index: 1;
+    height: 52px;
     width: 100%;
     padding: 0 30px;
     padding: 0 6vw;
+    background-color: #ffffff;
+    background-color: #ffffffc2;
     box-shadow: 0 2px 10px 0 rgb(0 0 0 / 10%);
 }
 
 main {
-    max-width: 960px;
+    /* max-width: 960px; */
 }
 
 @media (min-width: 760px) {
